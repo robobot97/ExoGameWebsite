@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>ATOS Gamification Project - Team 17</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="background.html">Background</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="background.html">Background</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Research</h1>
+      <h4 class="orange-text"><i>API and Server</i></h4>
+      <div class="row">
+        <p>
+        For ExoGame, we are tasked to host ExoGame API in the Cloud. It has to be scalable and have a consistent architecture that take advantage of the cloud elements.
+        We have chosen Amazon AWS to host our API and the framework we chose for the backend is Django, written in Python, because of the following:
+        </p>
+
+        <h5>Amazon AWS:</h5>
+          <ul style="padding-left:40px ! important;">
+            <li id="PoCTech">
+              <b>Cross-platform:</b> First of all, AWS is transportable across platforms. It provides virtual environments that could be tinkered with, failure of which causes minor to no damage to the service, as setting up an another instance is a quick and easy process.
+            </li><br>
+            <li id="PoCTech">
+            <b>Built-in monitoring services:</b> Second of all, AWS has built in load-balancing and other monitoring services, which notify the developers in extreme circumstances such as memory exhaustion and CPU overuse. This helps us to keep the server running in a consistent manner, resulting in a stable service.
+            </li><br>
+            <li id="PoCTech">
+            <b>Built-in management systems:</b> Last of all, AWS has built in management systems, which allows easy access to the configurations of the server. It also helps to create images of the virtual environments, creating backups and restoring them, if required. Also, scaling the services as the service grows and exporting the server to different instances is painless.
+            </li>
+          </ul>
+
+          <h5>Django:</h5>
+          <ul style="padding-left:40px ! important;">
+            <li id="PoCTech">
+              <b> Django is non-blocking:</b> Through handling requests in non-blocking manner(concurrent), the server is able to respond to other requests while handling longer requests such as database queries. Therefore, the server is able to handle more requests at once, and be more responsive compared to blocking servers.
+            </li><br>
+            <li id="PoCTech">
+            <b>Built-in ORM(Object-Relational Mapping):</b> Which has multiple benefits in the platform. First of all, it helps to form Object-Oriented Databases using modelling of the fields. Second of all, access to database becomes really fast. As an instance, selecting a single row from 4 million records will consume about ~20 sec in normal select query. However, using Django ORM, it often takes only about 0.5 sec. Last of all, it provides easy access to managers of the objects, which manages the read / write operations of the database.
+            </li><br>
+            <li id="PoCTech">
+            <b>Familiarity:</b> The third reason for choosing Django as our backend platform is the familiarity that the developers in the team has with the platform. As one of us have high familiarity with the platform, implementation of the framework and functions were quick. This saved us time to do more testings and focus more on the research part, rather than the implementation.
+            </li>
+          </ul>
+      </div>
+
+      <br><br>
+      <h4 class="orange-text"><i>Proof of Concept</i></h4>
+      <div class="row">
+        <p>
+        In order to utilise the ExoGame API to the fullest, we have been tasked to create an augmented reality game for iOS.<br>
+        The game which we will refer to as PoC would be a geo-cache game, using the advertisement screens in London (a set of them). In order to achieve those features, we've chosen the following:
+        <ul style="padding-left:40px ! important;">
+          <li id="PoCTech"><b>iOS:</b> Due to the well known fact that iOS is much more stable than Android, this decision would reduce the time of testing and fixing bugs on different versions. This platform was also suggested to us by our client initially. Additionally our team has got experience in Objective-C and Swift programming which will be useful to get us started quickly.</li><br>
+          <li id="PoCTech"><b>OpenCV:</b> For image processing, OpenCV is the most popular because it is open source, fast, efficient and comes with many useful algorithms that will be beneficial for ExoGame. We can take advantage of OpenCV with C/C++ and Python in order to test and improve algorithms on our computers, it is suitable for mobile platform like iOS, which uses Objective-C. Additionally, OpenCV was the suggested solution by our teaching assistant.</li><br>
+          <li id="PoCTech"><b>Tesseract OCR:</b> Tesseract is a well known OCR Engine built on top of OpenCV. It is one of the very few iOS-compatible library available for free uses and incorporable with the native iOS AVFoundation library. Also, it has optimization parameters, which helps to accelerate the OCR process.</li><br>
+          <li id="PoCTech"><b>Google Maps vs Apple MapKit:</b> We are still undecided on this part because our team has got experience working with Google Maps but Apple's counterpart has a much better integration with iOS with CoreLocation and CoreAnimation. The "Follow user location" mode is missing in Google Maps, the ability to add advance animations to annotations is also not one of the features of Google Maps SDK.<br> This decision will require more time to make.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="https://github.com/justinrol/ATOS-Gamification.git">Github</a></li>
+            <li><a class="white-text" href="https://www.youtube.com/channel/UCresXhI6er-6QvVIx_49cLQ">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Team 17 (ATOS Gamification Team 5) using Materialize
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

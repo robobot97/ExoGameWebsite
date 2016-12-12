@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>ATOS Gamification Project - Team 17</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Experimental Log</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">The following table is a record of the experiments we carried out in order to test some of the functionality of the system.</h5>
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="container">
+    <div class="section">
+
+      <h3 class="header center orange-text">API</h3>
+      
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">Experiment #</th>
+              <th data-field="name">Title</th>
+              <th data-field="price">Details</th>
+              <th data-field="price">Results</th>
+              <th data-field="price">Success</th>
+              <th data-field="price">Done By</th>
+              <th data-field="price">Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          
+          <tr>
+            <td>1</td>
+            <td>Data Integrity</td>
+            <td>Certain data of models should follow specific database rulings, such as ‘uniqueness’</td>
+            <td></td>
+            <td></td>
+            <td>Hyojong Kim</td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>1.1</td>
+            <td>Uniqueness of a coordinate and its location</td>
+            <td>Inserted a pair of coordinates that already exist in the database to create an area code.</td>
+            <td>Failed</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>2 Nov - 9 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>1.2</td>
+            <td>Uniqueness of a user</td>
+            <td>Created a user with an existing credentials</td>
+            <td>Failed</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>2 Nov - 9 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>1.3</td>
+            <td>Model Behaviours</td>
+            <td>Created models and ran class functions</td>
+            <td>Success</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>11 Nov - 18 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>2</td>
+            <td>Server Performance</td>
+            <td>Server should be able to handle multiple concurrent requests and in cases with millions of items</td>
+            <td></td>
+            <td></td>
+            <td>Hyojong Kim</td>
+            <td></td>
+          </tr>
+                    
+          <tr>
+            <td>2.1</td>
+            <td>Multiple Queries</td>
+            <td>Ran 100 concurrent queries using threading</td>
+            <td>Failed</td>
+            <td>No</td>
+            <td>Hyojong Kim</td>
+            <td>11 Nov- 18 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>2.2</td>
+            <td>Multiple Items</td>
+            <td>Had 4 mil items and expected the query time < 0.5</td>
+            <td>Success</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>11 Nov - 18 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>3</td>
+            <td>API Behaviours</td>
+            <td>API built should behave in an expected manner</td>
+            <td></td>
+            <td></td>
+            <td>Hyojong Kim</td>
+            <td></td>
+          </tr>
+                    
+          <tr>
+            <td>3.1</td>
+            <td>Correct Parameters</td>
+            <td>Made a get request to fetch an area code</td>
+            <td>Success</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>23 Nov - 30 Nov</td>
+          </tr>
+
+          <tr>
+            <td>3.2</td>
+            <td>Wrong Parameter</td>
+            <td>Made a get request to fetch a user and an area code with wrong parameter</td>
+            <td>Failed</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>23 Nov - 30 Nov</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+    </div>
+
+    <br>
+
+    <div class="section">
+
+      <h3 class="header center orange-text">PoC</h3>
+      
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">Experiment #</th>
+              <th data-field="name">Title</th>
+              <th data-field="price">Details</th>
+              <th data-field="price">Results</th>
+              <th data-field="price">Success</th>
+              <th data-field="price">Done By</th>
+              <th data-field="price">Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          
+          <tr>
+            <td>1</td>
+            <td>Camera and Face detection</td>
+            <td>Open and use the front and back camera of multiple platforms to detect faces using Haar Classifier</td>
+            <td></td>
+            <td></td>
+            <td>Vu Luong, Arjun Khurana</td>
+            <td>10 Nov – 16 Nov</td>
+          </tr>
+          
+          <tr>
+            <td>1.1</td>
+            <td>macOS Sierra (Macbook Pro)</td>
+            <td>Load the camera and face detection algorithm written in C++ in Xcode</td>
+            <td>Front camera loaded successfully and detected the user’s face as well as faces from advertisements</td>
+            <td>Yes</td>
+            <td>Vu Luong</td>
+            <td>10 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>1.2</td>
+            <td>iOS 10.1.1 (iPhone 6 and 7+)</td>
+            <td>Load the camera and face detection algorithm written in Objective C in Xcode</td>
+            <td>Same as 1.1</td>
+            <td>Yes</td>
+            <td>Vu Luong</td>
+            <td>12 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>1.3</td>
+            <td>Android 6.0 (Google Nexus 5)</td>
+            <td>Load the application written in Java and JavaCV in Eclipse on to the device</td>
+            <td>Failed to load the application onto the device after multiple attempts, possible cause due to faulty installation. Hence, Android is no longer the platform for development.</td>
+            <td>No</td>
+            <td>Vu Luong, Arjun Khurana</td>
+            <td>13 Nov – 16 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>2</td>
+            <td>Recognising shapes and texts</td>
+            <td>Using OpenCV and Tesseract OCR</td>
+            <td></td>
+            <td></td>
+            <td>Vu Luong, Hyojong Kim</td>
+            <td>20 Nov - 21 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>2.1</td>
+            <td>Shape detection</td>
+            <td>The app should be able to recognize rectangular shapes using Harris corner detection</td>
+            <td>Successfully recognise shapes of different sizes</td>
+            <td>Yes</td>
+            <td>Vu Luong</td>
+            <td>20 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>2.2</td>
+            <td>Text detection</td>
+            <td>Using Tesseract OCR to recognise text on different surfaces</td>
+            <td>Successfully recognise dark color text printed on paper and on well lit images. Takes a long time to recognise text with unique fonts, colours and sizes</td>
+            <td>Yes</td>
+            <td>Vu Luong, Hyojong Kim</td>
+            <td>21 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>3</td>
+            <td>Make request to server</td>
+            <td>Making get/post requests that allow the app to have the database access</td>
+            <td></td>
+            <td></td>
+            <td>Vu Luong, Hyojong Kim</td>
+            <td>21 Nov - 27 Nov</td>
+          </tr>
+                    
+          <tr>
+            <td>3.1</td>
+            <td>User profile</td>
+            <td>Using User object received from customer to generate temporary(persistent) user profile</td>
+            <td>Successfully requested user profile.</td>
+            <td>Yes</td>
+            <td>Vu Luong, Hyojong Kim</td>
+            <td>21 Nov - 24 Nov</td>
+          </tr>
+
+          <tr>
+            <td>3.2</td>
+            <td>Advertisement data</td>
+            <td>Supplying coordinate from iPhone GPS system and receiving the intended area code and its advertisement</td>
+            <td>GPS coordinate and area code retrieval success, advertisement sometimes unable to load</td>
+            <td>No</td>
+            <td>Vu Luong, Hyojong Kim</td>
+            <td>24 Nov - 27 Nov</td>
+          </tr>
+          
+          <tr>
+            <td>4</td>
+            <td>Saving data</td>
+            <td>Saving user profile data onto the local device and server</td>
+            <td></td>
+            <td></td>
+            <td>Vu Luong, Hyojong Kim</td>
+            <td>24 Nov - 02 Dec</td>
+          </tr>
+         
+          <tr>
+            <td>4.1</td>
+            <td>Device storage</td>
+            <td>Use local databases such as SQLite to create a persistent database</td>
+            <td>Successfully saved</td>
+            <td>Yes</td>
+            <td>Vu Luong</td>
+            <td>24 Nov - 02 Dec</td>
+          </tr>
+         
+          <tr>
+            <td>4.2</td>
+            <td>Server</td>
+            <td>Making post request based on user activities and save a history of user activities</td>
+            <td>User activities recorded on server</td>
+            <td>Yes</td>
+            <td>Hyojong Kim</td>
+            <td>27 Nov - 02 Dec</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+    <br>
+
+  </div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="https://github.com/justinrol/ATOS-Gamification.git">Github</a></li>
+            <li><a class="white-text" href="https://www.youtube.com/channel/UCresXhI6er-6QvVIx_49cLQ">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Team 17 (ATOS Gamification Team 5) using Materialize
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

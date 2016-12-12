@@ -54,14 +54,6 @@
         <li><a href="requirements.html">Requirements</a></li>
       </ul>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="background.html">Background</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="background.html">Background</a></li>
-      </ul>
-
        <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
       </ul>
@@ -80,8 +72,8 @@
       <br><br>
       <h1 class="header center orange-text">Requirements</h1>
       <div class="row center">
-        <h5 class="header col s12 light">After discussing the project brief and key aspects of the system our team developed a list of requirements. These requirements were then assigned importance to help determine which srequireents are crucial for the completion of the system.</h5>
-        <br>
+        <h5 class="header col s12 light">After significant discussions and extensive research our team developed the following requirements and Use Cases for the project.</h5>
+        <br><br>
         <h5>Due to the nature of our project we divided the requirements into two sub-sections, one for the API (Application Programming Interface) and one for the PoC (Proof of Concept).</h5>
       </div>
       <br><br>
@@ -267,9 +259,247 @@
 
       </table>
     </div>
+  </div>
+</div>
+
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+
+    <div class="row">
+      <div class="col s12 header center orange-text"><span class="flow-text"><h4><b>Use Cases</b></h4></span></div>
 
     </div>
+    <h5><b>User Login</b></h5>
+    <p>The user input email and password of choice. The app request matching data from the system, if no match is return for both fields, a new account is created for the user with the provided credentials. The app remembers the account to leave the user stay logged in even after they exit the app.</P>
+
+      <table class="striped">
+        <thead>
+          <tr>
+            <th data-field="name">Name</th>
+            <th data-field="id">Id</th>
+            <th data-field="description">Brief description</th>
+            <th data-field="actor1">Primary Actors</th>
+            <th data-field="actor2">Secondary Actors</th>
+            <th data-field="precon">Preconditions</th>
+            <th data-field="mainflow">Main flow</th>
+            <th data-field="postcon">Postconditions</th>
+            <th data-field="altflow">Alternative flows</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          
+          <tr>
+            <td>Login</td>
+            <td>UC1.1</td>
+            <td>The user can login to their account</td>
+            <td>App user</td>
+            <td>None</td>
+            <td>None</td>
+            <td>1.The use case starts when the user opens the app <br>2. The user is asked to provide email and password<br>3. The app looks for matching email and then matching password in the database<br>4. There is matching credentials found</td>
+            <td>1. The user is logged in<br>2. The credentials are remembered so the user won’t need to log in next time</td>
+            <td>1. EmailNotFound<br>2. PasswordNotFound</td>
+          </tr>
+          
+          <tr>
+            <td>Login: EmailNotFound</td>
+            <td>UC1.2</td>
+            <td>The user can register an account with their emai</td>
+            <td>App user</td>
+            <td>None</td>
+            <td>The email the user provided in the login screen is not in the database</td>
+            <td>1. The use case starts when the email provided is not found in the database<br>2. A new account is created with their email<br>3. The app requests a password from the user<br>4. The account is created in the database when the user confirms their credentials</td>
+            <td>1. A new account is created for the user with their email and password<br>2. The user is logged in<br>3. The credentials are remembered so the user won’t need to log in next time</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td>Login: PasswordNotFound</td>
+            <td>UC1.3</td>
+            <td>The user input the wrong password</td>
+            <td>User</td>
+            <td>None</td>
+            <td>None</td>
+            <td>1. The use case starts when the email provided by the user is in the database but the password associated with it doesn’t match<br>2. The user is asked to provide a password again until the correct password is provided<br>3. The correct password is provided by the user</td>
+            <td>1. The user is logged in<br>2. The credentials are remembered so the user won’t need to log in next time</td>
+            <td>None</td>
+          </tr>
+          </tbody>
+        </table>
+
+<br><br>
+
+        <h5><b>Scan for ads</b></h5>
+          <p>The user starts the app. The app uses the location of the user, check with the server and request locations of nearby advertisements. The app displays a map of the surrounding area of the user and mark the advertisements on the map based on their locations. If the advertisement has been interacted with by the user, it will be marked with green, otherwise it is marked with red.</P>
+
+        <table class="striped">
+        <thead>
+          <tr>
+            <th data-field="name">Name</th>
+            <th data-field="id">Id</th>
+            <th data-field="description">Brief description</th>
+            <th data-field="actor1">Primary Actors</th>
+            <th data-field="actor2">Secondary Actors</th>
+            <th data-field="precon">Preconditions</th>
+            <th data-field="mainflow">Main flow</th>
+            <th data-field="postcon">Postconditions</th>
+            <th data-field="altflow">Alternative flows</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+           <tr>
+            <td>ScanAds</td>
+            <td>UC2</td>
+            <td>The app scans for nearby advertisements and mark them on the map</td>
+            <td>User</td>
+            <td>None</td>
+            <td>The user is logged in</td>
+            <td>1. The app gets the location of the user<br>2. The app displays a map with user as an arrow to indicate direction they are facing<br>3. The app makes request for nearby advertisements from the server with the user location<br>4. The app checks whether or not the locations received has been visited by the user<br>5. The app marks the advertisements onto the map with appropriate colour (green: visited, red: not visited)</td>
+            <td>The map is updated with advertisement locations and status</td>
+            <td>None</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+<br><br>
+
+        <h5><b>Pick an ad</b></h5>
+          <p>The user picks an advertisement marker on the map. There’s a dialogue box overlay with details about the advertisement such as how many points in total does it has, if the advertisement has been played by the user, it will also display the previous points achieved. In the dialogue there’s a guide button which will guide the user to the advertisement using navigation.</P>
+
+      <table>
+        <thead>
+          <tr>
+            <th data-field="name">Name</th>
+            <th data-field="id">Id</th>
+            <th data-field="description">Brief description</th>
+            <th data-field="actor1">Primary Actors</th>
+            <th data-field="actor2">Secondary Actors</th>
+            <th data-field="precon">Preconditions</th>
+            <th data-field="mainflow">Main flow</th>
+            <th data-field="postcon">Postconditions</th>
+            <th data-field="altflow">Alternative flows</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Select</td>
+            <td>UC3</td>
+            <td>The user selects an advertisement marker on the map</td>
+            <td>User</td>
+            <td>None</td>
+            <td>There are advertisements marked onto the user’s map</td>
+            <td>1. The use case starts when the user selects one of the markers shown<br>2. The app uses the location of the marker and request further details about the advertisement from the database<br>3. There is a guide button display which will guide the user to that advertisement if pressed</td>
+            <td>The detailed information about the selected advertisement is displayed</td>
+            <td>None</td>
+          </tr>
+          
+          </tbody>
+        </table>
+
+<br><br>
+
+        <h5><b>Start playing</b></h5>
+          <p>When the user arrived at the advertisement board, the user can press play to start interacting with the advertisement. The app request and load the appropriate interactions based on the advertisement chosen by the user. The app loads the appropriate functionality that would be used to achieve the interactions such as face detection.</P>
+            <table>
+              <thead>
+                 <tr>
+            <th data-field="name">Name</th>
+            <th data-field="id">Id</th>
+            <th data-field="description">Brief description</th>
+            <th data-field="actor1">Primary Actors</th>
+            <th data-field="actor2">Secondary Actors</th>
+            <th data-field="precon">Preconditions</th>
+            <th data-field="mainflow">Main flow</th>
+            <th data-field="postcon">Postconditions</th>
+            <th data-field="altflow">Alternative flows</th>
+          </tr>
+              </thead>
+              
+              <tbody>
+
+          <tr>
+            <td>StartGame</td>
+            <td>UC4</td>
+            <td>The user starts interacting with the advertisement</td>
+            <td>User</td>
+            <td>None</td>
+            <td>The user arrived at the selected advertisement and press Play</td>
+            <td>1. The app loads game downloaded when the user selected the advertisement<br>2. The app loads the suitable app features to interact with the advertisement<br>3. The camera is open for the user to start playing</td>
+            <td>The game starts</td>
+            <td>None</td>
+          </tr>
+          </tbody>
+        </table>
+
+<br><br>
+
+        <h5><b>Scoring</b></h5>
+          <p>Each correct task done by the user will be rewarded with points from the app. The app records the final score onto the user profile. If the user achieves a certain amount of points, the app notifies the user of achievements/rewards.</P>
+            <table>
+              <thead>
+                 <tr>
+            <th data-field="name">Name</th>
+            <th data-field="id">Id</th>
+            <th data-field="description">Brief description</th>
+            <th data-field="actor1">Primary Actors</th>
+            <th data-field="actor2">Secondary Actors</th>
+            <th data-field="precon">Preconditions</th>
+            <th data-field="mainflow">Main flow</th>
+            <th data-field="postcon">Postconditions</th>
+            <th data-field="altflow">Alternative flows</th>
+          </tr>
+              </thead>
+              
+              <tbody>
+
+          <tr>
+            <td>Score</td>
+            <td>UC5.1</td>
+            <td>The user score points</td>
+            <td>User</td>
+            <td>None</td>
+            <td>The game has started and the user makes a correct move</td>
+            <td>1. The app analyses the move to confirm it matches with the expected interaction<br>2. The app adds the points associated with the particular interaction to the user profile</td>
+            <td>The score is updated to the user profile</td>
+            <td>1. MinusPoint<br>2. UnlockAchievement</td>
+          </tr>
+          
+          <tr>
+            <td>Score: MinusPoint</td>
+            <td>UC5.2</td>
+            <td>The user gets minus points</td>
+            <td>User</td>
+            <td>None</td>
+            <td>The user makes wrong moves</td>
+            <td>1. The app analyses the move to confirm it doesn’t match with the expected interaction<br>2. The app minuses the points associated with the particular interaction to the user profile</td>
+            <td>The score is updated to the user profile</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td>Score: UnlockAchievement</td>
+            <td>UC5.3</td>
+            <td>The user scores enough points to unlock an achievement</td>
+            <td>User</td>
+            <td>None</td>
+            <td>The user score points</td>
+            <td>1. The app checks with the list of achievements<br>2. The app finds an achievement that has been met<br>3. The app displays congratulation message</td>
+            <td>The achievement is unlocked in the user profile</td>
+            <td>None</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
   </div>
+</div>
+
 
  
  <footer class="page-footer orange">

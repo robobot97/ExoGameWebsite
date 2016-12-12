@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>ATOS Gamification Project - Team 17</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="background.html">Background</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="background.html">Background</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Testing</h1><br>
+      <div class="row center">
+        <h5 class="header col s12 light">Aside from manual testing (which are recorded in Experimental Log) we've conducted automated unit testing on our backend.</h5>
+      </div>
+
+      <h4 class="header center orange-text">Unit Testing</h4>
+      <div class="row">
+        <p>
+        At the launch of the application, Django runs a couple of unit tests(test at the atomic-level, which is functions in this instance) to verify the that the server runs properly and returns an expected result.  There are tests that are run at certain levels:
+        </p>
+          <ul style="padding-left:40px ! important;">
+            <li id="PoCTech">
+              First of all, on request level. Django is able to simulate the requests to the server(just like how an app would do). It runs a get request to obtain the test area-code and the test user account. Also, it runs a post method to create a new area-code, which gets deleted in the later stage.
+            </li><br>
+            <li id="PoCTech">
+              Second of all, on functions level. Django recommends the use of unittest module in python, and it is used with assertions in the tests to ensure that the functions do not crash. Examples include management of the models, such as retrieving and editing.
+            </li><br>
+            <li id="PoCTech">
+              Last of all, on script level. This test ensures that the backup script and continuous integrations scripts are running properly, and appropriate number of backups have been created. On testing server, scripts restore the database to the latest original state, and the server checks if there’s any fault in the database, by using tests discussesd above.
+            </li>
+          </ul>
+          <p>These tests are done automatically, and a single failure of the tests will prevent the server from being launched, and reports the failure to the developers via email.</p>
+      </div>
+  </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="https://github.com/justinrol/ATOS-Gamification.git">Github</a></li>
+            <li><a class="white-text" href="https://www.youtube.com/channel/UCresXhI6er-6QvVIx_49cLQ">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Team 17 (ATOS Gamification Team 5) using Materialize
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

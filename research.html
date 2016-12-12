@@ -75,16 +75,21 @@
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
+
       <br><br>
-      <h1 class="header center orange-text">Research</h1>
-      <h4 class="orange-text"><i>API and Server</i></h4>
+      <h1 class="header center orange-text">Research</h1><br>
+      <div class="row center">
+        <h5 class="header col s12 light">Below are the technologies we've chosen based on our independent research as well as looking into the suggestions from our client, supervisor and teaching assistant</h5>
+      </div>
+
+      <h4 class="header center orange-text">API and Server</h4>
       <div class="row">
         <p>
         For ExoGame, we are tasked to host ExoGame API in the Cloud. It has to be scalable and have a consistent architecture that take advantage of the cloud elements.
         We have chosen Amazon AWS to host our API and the framework we chose for the backend is Django, written in Python, because of the following:
         </p>
 
-        <h5>Amazon AWS:</h5>
+        <i><h5>Amazon AWS:</h5></i>
           <ul style="padding-left:40px ! important;">
             <li id="PoCTech">
               <b>Cross-platform:</b> First of all, AWS is transportable across platforms. It provides virtual environments that could be tinkered with, failure of which causes minor to no damage to the service, as setting up an another instance is a quick and easy process.
@@ -97,7 +102,7 @@
             </li>
           </ul>
 
-          <h5>Django:</h5>
+          <i><h5>Django:</h5></i>
           <ul style="padding-left:40px ! important;">
             <li id="PoCTech">
               <b> Django is non-blocking:</b> Through handling requests in non-blocking manner(concurrent), the server is able to respond to other requests while handling longer requests such as database queries. Therefore, the server is able to handle more requests at once, and be more responsive compared to blocking servers.
@@ -112,7 +117,7 @@
       </div>
 
       <br><br>
-      <h4 class="orange-text"><i>Proof of Concept</i></h4>
+      <h4 class="header center orange-text">Proof of Concept</h4>
       <div class="row">
         <p>
         In order to utilise the ExoGame API to the fullest, we have been tasked to create an augmented reality game for iOS.<br>
